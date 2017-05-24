@@ -17,7 +17,7 @@
 
  router.post("/burgers/create", function(req, res) {
      db.burger.create({
-         burger_name: req.body.burger_name,
+         description: req.body.description,
 
      }).then(function(dbBurger) {
 
